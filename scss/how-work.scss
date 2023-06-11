@@ -1,0 +1,43 @@
+.how-work {
+	padding: $section__padding;
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $background-color--blue;
+
+    @media #{$lg} {
+    	text-align: center;
+    }
+
+    &__headline {
+    	h2 {
+    		color: $h2__color--white;
+    		font-size: $h2__font-size;
+    		font-weight: $h2__font-weight;
+    	}
+    }
+
+    &__card {
+        padding: 30px;
+    	h3 {
+    		display: inline-block;
+    		vertical-align: middle;
+    		padding-left: 15px;
+
+    		color: $h3__color--white;
+    		font-size: $h3__font-size;
+    		font-weight: $h3__font-weight;
+
+            @media #{$lg} {
+                display: block;
+            }
+    	}
+
+    	p {
+            color: $text-color--white;
+            font-weight: $text__font-weight--small;
+            font-size: $text__font-size--medium;
+
+    	}
+    }
+}

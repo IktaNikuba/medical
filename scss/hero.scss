@@ -1,0 +1,66 @@
+.hero {
+	padding: $section__padding;
+	height: 100%;
+	background-image: url(../img/hero-background.jpg);
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $background-darken;
+    background-blend-mode: darken;
+
+	&__content {
+
+		position: relative;
+		display: flex;
+	    flex-direction: column;
+	    row-gap: 25px;
+
+	    @media #{$md} {
+	    	text-align: center;
+	    }
+
+		h1 {
+			color: $h1__color--white;
+			font-size: $h1__font--size;
+			font-weight: $h1__font--weight;
+			width: 50%;
+			@media #{$md} {
+				width: 100%;
+	    	}
+		}
+
+		p {
+			color: $text-color--white;
+			font-size: $text__font-size--large;
+			font-weight: $text__font-weight--small;
+			line-height: $text__line-height--large;
+			width: 50%;
+			@media #{$md} {
+				width: 100%;
+	    	}
+		}
+	}
+
+	&__switch {
+		position: absolute;
+		top: 50%;
+		right: 0;
+		display: flex;
+		flex-direction: column;
+		@media #{$md} {
+	    	display: none;
+	    }
+	}
+
+	&__switch-line {
+		height: 1px;
+        width: 20px;
+        background-color: $switch__background-color;
+        display: inline-block;
+        margin: 5px;
+        cursor: pointer;
+        &:hover {
+        	background-color: $switch--hover;
+        }
+	}
+}

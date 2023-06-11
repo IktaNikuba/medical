@@ -1,0 +1,80 @@
+.clients {
+	padding: $section__padding;
+	background-color: $background-color--blue;
+
+	&__content {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		@media #{$md} {
+			text-align: center;
+		}
+	}
+
+	h2 {
+		color: $h2__color--white;
+		font-size: $h2__font-size;
+		font-weight: $h2__font-weight;
+	}
+
+	p {
+		color: $text-color--white;
+		font-size: $text__font-size--medium;
+		font-weight: $text__font-weight--medium;
+		line-height: $text__line-height--small;
+	}
+
+	&__text {
+		width: 75%;
+		    display: flex;
+		    flex-direction: column;
+		    row-gap: 30px;
+		@media #{$md} {
+		    width: 100%;
+		}
+	}
+
+	&__scoreboard {
+		display: flex;
+        flex-direction: row;
+        @media #{$md} {
+			display: none;
+		}
+	}
+
+	.scoreboard__num {
+	    width: 74px;
+	    height: 118px;
+	    position: relative;
+	    display: flex;
+	    z-index: 1;
+	    align-items: center;
+	    justify-content: center;
+	    color: $scoreboarding__color;
+	    font-size: $scoreboarding__font-size;
+	    font-weight: $scoreboarding__font-weight;
+	}
+	.scoreboard__num::before {
+		background-image: url(../img/partners__scoreboard-top.png);
+		width: 75px;
+	    height: 50%;
+	    content: "";
+	    position: absolute;
+	    background-repeat: no-repeat;
+	    top: 0;
+	    z-index: -1;
+	}
+
+	.scoreboard__num::after {
+		background-image: url(../img/partners__scoreboard-bottom.png);
+		width: 75px;
+	    height: 50%;
+	    content: "";
+	    position: absolute;
+	    background-repeat: no-repeat;
+	    bottom: 0;
+	    left: 0;
+	    z-index: -1;
+	}
+}
+

@@ -1,0 +1,48 @@
+.about-us {
+	padding: $section__padding;
+
+	&__content {
+		display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 30px;
+        @media #{$md} {
+	    	text-align: center;
+	    }
+
+        h2{
+        	color: $h2__color--black;
+        	font-size: $h2__font-size;
+        	font-weight: $h2__font-weight;
+        }
+
+        p {
+        	color:$text-color--black;
+        	font-size: $text__font-size--small;
+        	font-weight: $text__font-weight--small;
+        	line-height: $text__line-height--medium;
+
+        }
+	}
+
+	&__visual {
+		display: flex;
+		justify-content: flex-end;
+
+		video {
+			width: 560px;
+
+			@media #{$xl} {
+	    	    width: 450px;
+	        }
+
+	        @media #{$lg} {
+	    	    width: 350px;
+	        }
+
+	        @media #{$md} {
+	    	   display: none;
+	        }
+		}
+	}
+}

@@ -1,0 +1,32 @@
+.partners
+ {
+	padding: $section__padding;
+
+
+
+	h2 {
+	    color:$h2__color--black;
+	    font-size: $h2__font-size;
+	    font-weight: $h2__font-weight;
+	    text-align: center;
+	}
+
+	&__list {
+	  	display: flex;
+	  	flex-wrap: wrap;
+        align-items: center;
+	    justify-content: center;
+	    gap: 30px;
+	    padding-top: 30px;
+
+	  	img {
+	  		max-width: 100%;
+            object-fit: cover;
+            height: 100%;
+            width: 200px;
+            @media #{$sm} {
+	   	        width: 120px;
+	        }
+	  	}
+	}
+}

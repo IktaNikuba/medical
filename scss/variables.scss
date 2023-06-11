@@ -1,0 +1,146 @@
+ /* colors */
+$color--white: #ffff;
+$color--black: #111111;
+$color--blue: #0db0e5;
+$color--grey: grey;
+$color--transporent: #0000;
+$color--lightgrey: #d5d5d5;
+
+/* font */
+$font-size--small: 14px;
+$font-size--medium: 16px;
+$font-size--large: 18px;
+$font-weight--big: 20px;
+$line-height--small: 25px;
+$line-height--medium: 27px;
+$line-height--large: 32px;
+$font-weight--small: 300;
+$font-weight--medium: 400;
+$font-weight--big: 600;
+
+/* text */
+$text-color--black: $color--black;
+$text-color--grey: $color--grey;
+$text-color--white: $color--white;
+$text__font-size--small: $font-size--small;
+$text__font-size--medium: $font-size--medium;
+$text__font-size--large: $font-size--large;
+$text__font-size--big: $font-weight--big;
+$text__font-weight--small: 300;
+$text__font-weight--medium: 400;
+$text__font-weight--big: 600;
+$text__line-height--small: 25px;
+$text__line-height--medium: 27px;
+$text__line-height--large: 32px;
+
+/* h1 */
+$h1__color--white: $color--white;
+$h1__font--size: 44px;
+$h1__font--weight: $font-weight--small;
+
+/* h2 */
+$h2__color--white: $color--white;
+$h2__color--black: $color--black;
+$h2__font-size: 35px;
+$h2__font-weight: $font-weight--small;
+
+/* h3 */
+$h3__color--white: $color--white;
+$h3__color--black: $color--black;
+$h3__font-size: 22px;
+$h3__font-weight: $font-weight--medium;
+
+/* h4 */
+$h4__color--white: $color--white;
+$h4__color--black: $color--black;
+$h4__font-size: 17px;
+$h4__font-weight: $font-weight--big;
+
+/* scoreboarding */
+$scoreboarding__color: $color--blue;
+$scoreboarding__font-size: 75px;
+$scoreboarding__font-weight: $text__font-weight--big;
+
+/* background-colors */
+$background-color--white: $color--white;
+$background-color--blue: $color--blue;
+$background-color--grey: $color--grey;
+$background-color--black: $color--black;
+$background-color--transparent: transparent;
+$background-color--lightgrey: $color--lightgrey;
+$background-darken: #00000080;
+$background-lighten: #ffffffe3;
+
+
+
+/* border-colors */
+$border-color--blue: $color--blue;
+$border-color--white: $color--white;
+$border-color--grey: $color--grey;
+
+/* btn */
+$btn__background-color--active: $color--blue;
+$btn__background-color--transparent: $color--transporent;
+$btn__background-color--white: $color--white;
+$btn__color--white: $color--white;
+$btn__color--black: $color--black;
+$btn__color-blue--hover: $color--grey;
+$btn__color-transparent--hover: $color--blue;
+$btn__font-weight: 400;
+$btn__font-size: 14px;
+$btn__border-color--white: $color--white;
+$btn__padding: 5px 10px;
+$btn__border: 1px solid $color--white;
+
+/* links */
+$links__font-size: 14px;
+$links__font-weight: 400;
+$links__color--black: $color--black;
+$links__color-grey--hover: $color--grey;
+$links__color--blue: $color--blue;
+
+/* padding */
+$section__padding: 50px 0;
+$footer__padding: 20px 0;
+
+
+/* switch */
+$switch__background-color: $color--white;
+$switch--hover: $color--blue;
+
+/* grid */
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1400px) !default;
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+        xxl: 1450px) !default;
+
+$grid-columns: 12 !default;
+$grid-gutter-width: 1.5rem !default;
+
+$xs: '(max-width: 375px)' !default;
+$sm: '(max-width: #{map-get($grid-breakpoints , sm) - 1px})' !default;
+$md: '(max-width: #{map-get($grid-breakpoints, md) - 1px})' !default;
+$lg: '(max-width: #{map-get($grid-breakpoints, lg) - 1px})' !default;
+$xl: '(max-width: #{map-get($grid-breakpoints, xl) - 1px})' !default;
+$xxl: '(max-width: #{map-get($grid-breakpoints, xxl) - 1px})' !default;
+
+$min-xs: '(min-width: 375px)';
+$min-sm: '(min-width: #{map-get($grid-breakpoints, sm)})' !default;
+$min-md: '(min-width: #{map-get($grid-breakpoints, md)})' !default;
+$min-lg: '(min-width: #{map-get($grid-breakpoints, lg)})' !default;
+$min-xl: '(min-width: #{map-get($grid-breakpoints, xl)})' !default;
+$min-xxl: '(min-width: #{map-get($grid-breakpoints, xxl)})' !default;
+
+
+
+

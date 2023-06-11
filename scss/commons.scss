@@ -1,0 +1,46 @@
+/*Buttons*/
+
+.btn {
+	display: inline-block;
+	font-size: $btn__font-size;
+	font-weight: $btn__font-weight;
+	color: $btn__color--white;
+	padding: $btn__padding;
+
+
+
+	&--active {
+		background-color:$btn__background-color--active;
+		&:hover {
+			background-color: $btn__color-blue--hover;
+			border: $btn__border;
+			color: $btn__color--white;
+		}
+	}
+
+	&--transparent {
+		background-color:$btn__background-color--transparent;
+		border: $btn__border;
+		&:hover {
+			background-color: $btn__color-transparent--hover;
+			color: $btn__color--white;
+			border: none;
+		}
+	}
+
+	&--white {
+		background-color: $btn__background-color--white;
+		color: $btn__color--black;
+		&:hover {
+			color: $btn__color--white;
+			background-color: $btn__background-color--active;
+		}
+	}
+
+	&--margin {
+		margin-right: 10px;
+		@media #{$md} {
+	    	margin-right: 70px;
+	    }
+	}
+}

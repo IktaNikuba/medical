@@ -1,0 +1,14 @@
+.footer {
+	padding: $footer__padding; 
+	background-color: $background-color--black;
+	text-align: center;
+	color: $text-color--grey;
+
+	a {
+		color: $links__color--blue;
+		text-decoration: none;
+		@media #{$md} {
+			display: block;
+	    }
+    }
+}
